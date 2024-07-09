@@ -618,7 +618,7 @@ engines:
   # - name: elasticsearch
   #   shortcut: es
   #   engine: elasticsearch
-  #   base_url: http://localhost:9200
+  #   base_url: http://20.2.88.25:9200
   #   username: elastic
   #   password: changeme
   #   index: my-index
@@ -1119,7 +1119,7 @@ engines:
   #   engine: meilisearch
   #   shortcut: mes
   #   enable_http: true
-  #   base_url: http://localhost:7700
+  #   base_url: http://20.2.88.25:7700
   #   index: my-index
 
   - name: mixcloud
@@ -1248,7 +1248,7 @@ engines:
   # - name: opensemanticsearch
   #   engine: opensemantic
   #   shortcut: oss
-  #   base_url: 'http://localhost:8983/solr/opensemanticsearch/'
+  #   base_url: 'http://20.2.88.25:8983/solr/opensemanticsearch/'
 
   - name: openstreetmap
     engine: openstreetmap
@@ -1573,7 +1573,7 @@ engines:
   # - name: solr
   #   engine: solr
   #   shortcut: slr
-  #   base_url: http://localhost:8983
+  #   base_url: http://20.2.88.25:8983
   #   collection: collection_name
   #   sort: '' # sorting: asc or desc
   #   field_list: '' # comma separated list of field names to display on the UI
@@ -1672,7 +1672,7 @@ engines:
   # - name: Torznab EZTV
   #   engine: torznab
   #   shortcut: eztv
-  #   base_url: http://localhost:9117/api/v2.0/indexers/eztv/results/torznab
+  #   base_url: http://20.2.88.25:9117/api/v2.0/indexers/eztv/results/torznab
   #   enable_http: true  # if using localhost
   #   api_key: xxxxxxxxxxxxxxx
   #   show_magnet_links: true
