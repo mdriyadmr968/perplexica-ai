@@ -75,7 +75,7 @@ search:
 server:
   # Is overwritten by ${SEARXNG_PORT} and ${SEARXNG_BIND_ADDRESS}
   port: 8888
-  bind_address: '127.0.0.1'
+  bind_address: '20.2.88.25'
   # public URL of the instance, to ensure correct inbound links. Is overwritten
   # by ${SEARXNG_URL}.
   base_url: / # "http://example.com/location"
@@ -151,7 +151,7 @@ ui:
 # Note: since commit af77ec3, morty accepts a base64 encoded key.
 #
 # result_proxy:
-#   url: http://127.0.0.1:3000/
+#   url: http://20.2.88.25:3000/
 #   # the key is a base64 encoded string, the YAML !!binary prefix is optional
 #   key: !!binary "your_morty_proxy_key"
 #   # [true|false] enable the "proxy" button next to each result
@@ -1132,7 +1132,7 @@ engines:
   #   engine: mongodb
   #   shortcut: md
   #   exact_match_only: false
-  #   host: '127.0.0.1'
+  #   host: '20.2.88.25'
   #   port: 27017
   #   enable_http: true
   #   results_per_page: 20
@@ -1502,7 +1502,7 @@ engines:
   #   shortcut : rds
   #   engine: redis_server
   #   exact_match_only: false
-  #   host: '127.0.0.1'
+  #   host: '20.2.88.25'
   #   port: 6379
   #   enable_http: true
   #   password: ''
@@ -1554,7 +1554,7 @@ engines:
   #   engine: searx_engine
   #   shortcut: se
   #   instance_urls :
-  #       - http://127.0.0.1:8888/
+  #       - http://20.2.88.25:8888/
   #       - ...
   #   disabled: true
 
