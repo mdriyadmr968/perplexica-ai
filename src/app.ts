@@ -12,7 +12,7 @@ const app = express();
 const server = http.createServer(app);
 
 const corsOptions = {
-  origin: '*',
+  origin: 'http://20.2.88.25:3000',
 };
 
 app.use(cors(corsOptions));
