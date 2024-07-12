@@ -28,7 +28,7 @@ export default function RootLayout({
     <html className="h-full" lang="en" suppressHydrationWarning>
       <body className={cn('h-full', montserrat.className)}>
         <ThemeProvider>
-          <Sidebar>{children}</Sidebar>
+          {children}
           <Toaster
             toastOptions={{
               unstyled: true,

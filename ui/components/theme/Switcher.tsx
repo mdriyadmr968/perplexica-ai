@@ -6,7 +6,13 @@ import { Select } from '../SettingsDialog';
 
 type Theme = 'dark' | 'light' | 'system';
 
-const ThemeSwitcher = ({ className }: { className?: string }) => {
+const ThemeSwitcher = ({
+  className,
+  selectedTheme,
+}: {
+  className?: string;
+  selectedTheme?: Theme;
+}) => {
   const [mounted, setMounted] = useState(false);
 
   const { theme, setTheme } = useTheme();
@@ -22,7 +28,9 @@ const ThemeSwitcher = ({ className }: { className?: string }) => {
   }, []);
 
   useEffect(() => {
-    if (isTheme('system')) {
+    if (selectedTheme) {
+      setTheme(selectedTheme);
+    } else if (isTheme('system')) {
       const preferDarkScheme = window.matchMedia(
         '(prefers-color-scheme: dark)',
       );
@@ -38,7 +46,7 @@ const ThemeSwitcher = ({ className }: { className?: string }) => {
         preferDarkScheme.removeEventListener('change', detectThemeChange);
       };
     }
-  }, [isTheme, setTheme, theme]);
+  }, [isTheme, setTheme, theme, selectedTheme]);
 
   // Avoid Hydration Mismatch
   if (!mounted) {

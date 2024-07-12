@@ -1,8 +1,9 @@
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Settings } from 'lucide-react';
 import { useEffect, useRef, useState } from 'react';
 import TextareaAutosize from 'react-textarea-autosize';
 import CopilotToggle from './MessageInputActions/Copilot';
 import Focus from './MessageInputActions/Focus';
+import SettingsDialog from './SettingsDialog';
 
 const EmptyChatMessageInput = ({
   sendMessage,
@@ -15,6 +16,7 @@ const EmptyChatMessageInput = ({
 }) => {
   const [copilotEnabled, setCopilotEnabled] = useState(false);
   const [message, setMessage] = useState('');
+    const [isSettingsOpen, setIsSettingsOpen] = useState(false);
 
   const inputRef = useRef<HTMLTextAreaElement | null>(null);
 
@@ -59,9 +61,24 @@ const EmptyChatMessageInput = ({
           placeholder="Ask anything..."
         />
         <div className="flex flex-row items-center justify-between mt-4">
-          <div className="flex flex-row items-center space-x-1 -mx-2">
-            <Focus focusMode={focusMode} setFocusMode={setFocusMode} />
-            {/* <Attach /> */}
+          <div className="flex gap-2">
+            <div className="flex flex-row items-center space-x-1 -mx-2">
+              {/* <h1>setting button</h1> */}
+              <Settings
+                onClick={() => setIsSettingsOpen(!isSettingsOpen)}
+                className="cursor-pointer"
+              />
+
+              <SettingsDialog
+                isOpen={isSettingsOpen}
+                setIsOpen={setIsSettingsOpen}
+              />
+
+              {/* <Attach /> */}
+            </div>
+            <div className="flex flex-row items-center space-x-1 -mx-2">
+              <Focus focusMode={focusMode} setFocusMode={setFocusMode} />
+            </div>
           </div>
           <div className="flex flex-row items-center space-x-4 -mx-2">
             <CopilotToggle
