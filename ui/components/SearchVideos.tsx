@@ -118,7 +118,7 @@ const Searchvideos = ({
                       alt={video.title}
                       className="relative h-full w-full aspect-video object-cover rounded-lg"
                     />
-                    <div className="absolute bg-white/70 dark:bg-black/70 text-black/70 dark:text-white/70 px-2 py-1 flex flex-row items-center space-x-1 bottom-1 right-1 rounded-md">
+                    <div className="absolute bg-white/70 dark:bg-[#18254F] text-black/70 dark:text-white/70 px-2 py-1 flex flex-row items-center space-x-1 bottom-1 right-1 rounded-md">
                       <PlayCircle size={15} />
                       <p className="text-xs">Video</p>
                     </div>
@@ -142,7 +142,7 @@ const Searchvideos = ({
                       alt={video.title}
                       className="relative h-full w-full aspect-video object-cover rounded-lg"
                     />
-                    <div className="absolute bg-white/70 dark:bg-black/70 text-black/70 dark:text-white/70 px-2 py-1 flex flex-row items-center space-x-1 bottom-1 right-1 rounded-md">
+                    <div className="absolute bg-white/70 dark:bg-[#18254F] text-black/70 dark:text-white/70 px-2 py-1 flex flex-row items-center space-x-1 bottom-1 right-1 rounded-md">
                       <PlayCircle size={15} />
                       <p className="text-xs">Video</p>
                     </div>
@@ -151,7 +151,7 @@ const Searchvideos = ({
             {videos.length > 4 && (
               <button
                 onClick={() => setOpen(true)}
-                className="bg-light-100 hover:bg-light-200 dark:bg-dark-100 dark:hover:bg-dark-200 transition duration-200 active:scale-95 hover:scale-[1.02] h-auto w-full rounded-lg flex flex-col justify-between text-white p-2"
+                className="bg-light-100 hover:bg-light-200 dark:bg-[#18254F] dark:hover:bg-[#18254F] transition duration-200 active:scale-95 hover:scale-[1.02] h-auto w-full rounded-lg flex flex-col justify-between text-white p-2"
               >
                 <div className="flex flex-row items-center space-x-1">
                   {videos.slice(3, 6).map((video, i) => (
