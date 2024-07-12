@@ -429,7 +429,7 @@ const ChatWindow = ({ id }: { id?: string }) => {
     notFound ? (
       <Error statusCode={404} />
     ) : (
-      <div>
+      <div className="bg-white dark:bg-[#18254F]">
         {messages.length > 0 ? (
           <>
             {/* <Navbar messages={messages} /> */}

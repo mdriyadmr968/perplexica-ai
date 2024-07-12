@@ -51,7 +51,7 @@ const EmptyChatMessageInput = ({
       }}
       className="w-full"
     >
-      <div className="flex flex-col bg-light-secondary dark:bg-dark-secondary px-5 pt-5 pb-2 rounded-lg w-full border border-light-200 dark:border-dark-200">
+      <div className="flex flex-col bg-light-secondary dark:bg-[#18254F] px-5 pt-5 pb-2 rounded-lg w-full border border-light-200 dark:border-dark-200">
         <TextareaAutosize
           ref={inputRef}
           value={message}

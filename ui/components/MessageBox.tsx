@@ -54,7 +54,7 @@ const MessageBox = ({
         message.content.replace(
           regex,
           (_, number) =>
-            `<a href="${message.sources?.[number - 1]?.metadata?.url}" target="_blank" className="bg-light-secondary dark:bg-dark-secondary px-1 rounded ml-1 no-underline text-xs text-black/70 dark:text-white/70 relative">${number}</a>`,
+            `<a href="${message.sources?.[number - 1]?.metadata?.url}" target="_blank" className="bg-light-secondary dark:bg-[#18254F] px-1 rounded ml-1 no-underline text-xs text-black/70 dark:text-white/70 relative">${number}</a>`,
         ),
       );
     }
@@ -148,7 +148,7 @@ const MessageBox = ({
                 message.role === 'assistant' &&
                 !loading && (
                   <>
-                    <div className="h-px w-full bg-light-secondary dark:bg-dark-secondary" />
+                    <div className="h-px w-full bg-light-secondary dark:bg-[#18254F]" />
                     <div className="flex flex-col space-y-3 text-black dark:text-white">
                       <div className="flex flex-row items-center space-x-2 mt-4">
                         <Layers3 />
@@ -160,7 +160,7 @@ const MessageBox = ({
                             className="flex flex-col space-y-3 text-sm"
                             key={i}
                           >
-                            <div className="h-px w-full bg-light-secondary dark:bg-dark-secondary" />
+                            <div className="h-px w-full bg-light-secondary dark:bg-[#18254F]" />
                             <div
                               onClick={() => {
                                 sendMessage(suggestion);

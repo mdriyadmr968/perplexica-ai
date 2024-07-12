@@ -76,7 +76,7 @@ const DeleteChat = ({
                 leaveFrom="opacity-100 scale-200"
                 leaveTo="opacity-0 scale-95"
               >
-                <Dialog.Panel className="w-full max-w-md transform rounded-2xl bg-light-secondary dark:bg-dark-secondary border border-light-200 dark:border-dark-200 p-6 text-left align-middle shadow-xl transition-all">
+                <Dialog.Panel className="w-full max-w-md transform rounded-2xl bg-light-secondary dark:bg-[#18254F] border border-light-200 dark:border-dark-200 p-6 text-left align-middle shadow-xl transition-all">
                   <Dialog.Title className="text-lg font-medium leading-6 dark:text-white">
                     Delete Confirmation
                   </Dialog.Title>

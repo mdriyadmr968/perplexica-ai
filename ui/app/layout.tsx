@@ -34,7 +34,7 @@ export default function RootLayout({
               unstyled: true,
               classNames: {
                 toast:
-                  'bg-light-primary dark:bg-dark-primary text-white rounded-lg p-4 flex flex-row items-center space-x-2',
+                  'bg-light-primary dark:bg-[#18254F] text-white rounded-lg p-4 flex flex-row items-center space-x-2',
               },
             }}
           />
